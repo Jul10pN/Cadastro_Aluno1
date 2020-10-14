@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="70dp">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="77dp"
+        android:text="Usabilidade, desenvolvimento web, mobile e jogos, Sistemas distribuídos e mobile."
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView23"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewCurso"
+        android:layout_width="164dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="125dp"
+        android:text="Curso"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16pt"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="176dp"
+        android:text="Acesso as Notas"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurso"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="87dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sessão de Notas"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView22"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="163dp"
+        android:layout_height="54dp"
+        android:text="Materias Ativas"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Perfil do Aluno"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16pt"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="23dp"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/ic_launcher_foreground"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewNomeL"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewNomeL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="9dp"
+        android:text="E-mail:"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEmailL"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewEmailL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Senha:"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="******"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmailL"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
